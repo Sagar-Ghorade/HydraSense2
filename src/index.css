@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------------------
+ * Shared page styling
+ *
+ * All five screens render through `components/SiteLayout`, which supplies the
+ * page background, header, content width and typography. Only reusable visual
+ * helpers live here; the previous per-screen background/font overrides were
+ * removed so the pages cannot drift apart again.
+ * ------------------------------------------------------------------------- */
+
+/* Soft gradient panel used by the Home hero. */
+.hero-bg {
+  background: linear-gradient(180deg, #e8f3ff 0%, #edf6ff 65%, #ffffff 100%);
+}
